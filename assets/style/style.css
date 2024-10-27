@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Orbitron:wght@400..900&family=Rubik+Wet+Paint&display=swap');
+
+:root {
+    --cor-de-fundo: #222831;
+    --cor-secao: #393e46dc;
+    --cor-titulo: #FFD369;
+    --cor-texto: rgb(238, 238, 238);
+}
+
+
+
+/* Menu CSS */
+
+header .btn {
+    display: flex;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+    width: 125px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--cor-de-fundo);
+    color: var(--cor-texto);
+    font-weight: bold;
+    font-size: 18px;
+    position: relative;
+    top: 38%;
+    left: 35%;
+}
+
+.btn:hover {
+    box-shadow: 0 0 20px 0px #2e2e2e3a;
+}
+
+.btn .icon {
+    position: absolute;
+    height: 40px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.8s;
+}
+
+.btn .text {
+    transform: translateX(55px);
+}
+
+.btn:hover .icon {
+    width: 140px;
+}
+
+.btn:hover .text {
+    transition: all 0.5s;
+    opacity: 0;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btn:active .icon {
+    transform: scale(0.85);
+}
+
+.btn ul{
+    background-color: var(--cor-de-fundo);
+    display: block;
+    position: absolute; 
+    top: 100%; 
+    left: 0; 
+    width: 180px; 
+    border-radius: 8px;
+}
+
+.btn ul li{
+    width: 100%;
+    padding: 10px;
+    display: none;
+    z-index: 999;
+}
+
+.btn ul li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: var(--cor-texto);
+    text-align: center;
+    
+}
+
+.btn:hover ul li {
+    display: block;
+}
+
+
+body {
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    background-color: var(--cor-de-fundo);
+}
+
+header {
+    height: 200px;
+    background-color: var(--cor-secao);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+header h1 {
+    position: relative;
+    left: 5%;
+    font-family: "Orbitron", sans-serif;
+    color: var(--cor-titulo);
+}
+
+main {
+    background-color: var(--cor-secao);
+    margin: 50px 30px;
+    padding: 40px;
+    color: var(--cor-texto);
+}
+
+main h2 {
+    text-shadow: 7px 7px 5px rgba(0, 0, 0, 0.541);
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--cor-titulo);
+    padding: 10px;
+}
+
+main p {
+    padding: 5px 5px 10px 5px;
+    text-align: justify;
+    max-width: 700px;
+}
+
+.sobre-fake-news {
+    display: flex;
+}
+
+.sobre-fake-news img {
+    margin: 50px 50px 50px 100px;
+    width: 400px;
+    height: auto;
+    border: 2px solid var(--cor-texto);
+    box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.445);
+}
+
+.topicos-fake-news ul {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.topicos-fake-news li {
+    align-items: center;
+    list-style-image: url(../img/traco.png);
+    text-align: justify;
+    padding: 5px;
+}
+
+footer {
+    height: 50px;
+    color: var(--cor-texto);
+    background-color: var(--cor-secao);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
